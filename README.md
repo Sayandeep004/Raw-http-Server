@@ -1,2 +1,10 @@
-# Raw-http-Server
-Educational implementation of an HTTP/1.1 server that demonstrates the socket lifecycle and Layer-7 request/response framing. The server handles concurrent clients with a thread-per-connection model, serves static content securely, and provides a simple REST endpoint for runtime monitoring (uptime, active threads, request count).
+# raw-http-server
+
+Lightweight HTTP/1.1 server implemented with raw Python sockets.
+
+## Quickstart
+```bash
+python server.py 8080
+# open http://127.0.0.1:8080
+# or check status:
+curl http://127.0.0.1:8080/api/status
